@@ -1,0 +1,16 @@
+[
+  {
+    model: "Samsung S7",
+    chargers: "55",
+    cases: 56,
+    earphones: "57",
+    scratched: "2"
+  },
+  {
+    model: "Samsung S8",
+    chargers: "5324",
+    cases: "000",
+    earphones: "555557",
+    scratched: "7896"
+  }
+]

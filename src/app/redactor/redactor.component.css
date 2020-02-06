@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    min-width: 480px;
+    margin-left: 30px;
+}
+
+.unload {
+    margin: 20px 0 30px 30px;
+    border: 1px solid black;
+}
+.add {
+    margin: 0 0 10px 30px;
+    border: 1px solid black;
+}
+.delete {
+    width: 30px;
+}
+td {
+    padding: 3px;
+    cursor: pointer;
+}
+.items:hover {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+.head {
+    border-bottom: 1px solid black;
+}
+.download a {
+    text-decoration: none;
+    margin: 20px 30px;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.download {
+    height: 50px;
+}

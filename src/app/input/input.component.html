@@ -1,0 +1,9 @@
+<button mat-flat-button (click)="fileInput.click()">Choose File</button>
+<input hidden (change)="read()" #fileInput type="file" accept="application/JSON" id="file">
+<br>
+<mat-form-field>
+    <textarea matInput [(ngModel)]="data" placeholder="Input JSON." (change)="loading(data)"></textarea>
+</mat-form-field>
+  
+<button mat-flat-button [routerLink]="routerLink">Load</button>
+

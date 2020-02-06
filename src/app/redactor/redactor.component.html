@@ -1,0 +1,28 @@
+<div>
+    <div>
+        <div>
+            <button class="add" mat-flat-button (click)="addItem(text, year)"><mat-icon>add</mat-icon></button>
+        </div>
+    </div>
+    <table>
+            <thead>
+                <tr class="head">
+                    <th *ngFor="let col of columns">{{col}}</th>
+                </tr>
+            </thead>
+            <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+                <tr *ngFor="let item of items" cdkDrag>
+                    <td class="items" *ngFor="let col of columns" (click)="changeItem(item, col)">{{item[col]}}</td>
+                    <td class="delete"> 
+                        <mat-icon (click)="deleteItem(item)">highlight_off</mat-icon>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+<button mat-flat-button routerLink="/" class="unload">Unload</button>
+<div class="download">
+    <a href=# (click)="writeJSON()">Doownload file in format JSON.</a>
+    <a href=# (click)="writeCSV()">Doownload file in format CSV.</a>
+</div>
+

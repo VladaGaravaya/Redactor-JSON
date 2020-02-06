@@ -1,0 +1,10 @@
+<div mat-dialog-content>
+    <h3>Input new item.</h3>
+    <mat-form-field *ngFor='let col of columns'>
+        <label>{{col}}:<input matInput [(ngModel)]="item[col]"></label>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>No Thanks</button>
+    <button mat-button [mat-dialog-close]="item" cdkFocusInitial>Ok</button>
+</div>
